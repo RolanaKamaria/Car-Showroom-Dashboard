@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+/* #light */
+#light {
+  --primary-color: #bbbed8;
+  --secondary-color: #3a0074;
+  --update-color: #3a0074;
+  --body-bg: #dcdef0;
+  --card-01-bg: linear-gradient(#77a7eb, #367ad9);
+  --card-02-bg: linear-gradient(#a977eb, #7236d9);
+  --card-03-bg: linear-gradient(#eb777b, #de364c);
+  --card-04-bg: linear-gradient(#77ebdf, #36dea0);
+  --heading-color: #fff;
+  --small-text-color: #4a3374;
+  --recommend-car01-bg: #90e8df;
+  --recommend-car02-bg: #daa0a2;
+  --recommend-car03-bg: #96b8e6;
+  --input-back: #dcdef0;
+  --palceholder: #866cd4b8;
+  --hover: #8657c1fd;
+  --car-title: #4a3374;
+  background-color: var(--body-bg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dark {
+  --primary-color: #181b3a;
+  --secondary-color: #01d293;
+  --update-color: #181b3a;
+  --body-bg: #0b0c28;
+  --card-01-bg: linear-gradient(#ef621c, #e1424e);
+  --card-02-bg: linear-gradient(#01d293, #56c57a);
+  --card-03-bg: #725cff;
+  --card-04-bg: #2884ff;
+  --heading-color: #fff;
+  --small-text-color: #808191;
+  --recommend-car01-bg: #919069;
+  --recommend-car02-bg: #778288;
+  --recommend-car03-bg: #7e7072;
+  --input-back: #42455f;
+  --hover: #42455f;
+  --palceholder: #b5b3b9b8;
+  --car-title: #181b3a;
+  background-color: var(--body-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--body-bg);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.main__layout {
+  margin-left: 260px;
+}
+
+img {
+  width: 100%;
+}
+
+.switch {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 600px;
+  height: 50px;
+  top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+#bt{
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--small-text-color);
+  transition: all 0.5s ease;
+margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#bt:focus{
+  outline: none;
 }
